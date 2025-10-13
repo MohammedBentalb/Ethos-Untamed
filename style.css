@@ -794,11 +794,11 @@ mark {
 
 
 .section-group{
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* background: linear-gradient(to bottom, #244349 10%, #0A0F14); */
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0.91)), url(assets/img/ch-background.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0.91)), url(assets/img/ch-background.png);
     padding-block: 3.5rem;
     min-height: 100vh;
 }
@@ -817,7 +817,7 @@ mark {
 }
 
 .title-container div p{
-    color: var(--primary-greenish) !important;    
+    color: var(--primary-greenish);    
     font-size: 13px;
     font-weight: bold;
     font-family: "Blender pro";
@@ -976,6 +976,7 @@ mark {
 .card-info h3{
     font-size: 48px;
     text-transform: uppercase;
+    font-weight: normal;
     color: white;
     line-height: 100%;
 }
@@ -1034,10 +1035,12 @@ mark {
     position: relative;
     width: fit-content;
     display: flex;
+    z-index: 10;
 }
 .button-action img{
     position: absolute;
     scale: 1.05 1.1;
+    z-index: -1;
 }
 
 .card-lock{
@@ -1068,12 +1071,12 @@ mark {
 }
 
 .list-items{
-    max-width: 1350px;
+    max-width: 1020px;
     width: 100%;
     display: flex;
     align-items: center;
     gap: 46px;
-    padding-inline: 24px;
+    padding-inline: 60px;
 }
 .list-items-item{
     position: relative;
@@ -1133,3 +1136,70 @@ mark {
 }
 
 
+
+
+.blue .cube {
+    background-color: var(--primary-blueish);
+}
+
+.title-container.blue div p{
+    color: var(--primary-blueish) !important;
+}
+
+
+.title-container.blue p span{
+    margin-right: 10px;
+}
+
+.title-container.blue p span::before{
+    background-color: var(--primary-blueish) !important;
+}
+.title-container.blue p span::after{
+    left: 90%;
+}
+
+.progress-in.blue{
+    background-color: var(--primary-blueish);
+    box-shadow: -1px -1px 5px var(--primary-blueish);
+    width: 60%;
+}
+
+.analyze.blue p {
+    color: var(--secondary-blueish);
+}
+.analyze.blue div{
+    background-color: var(--secondary-blueish);
+}
+.card-info.blue p:nth-child(2):after{
+    background-color: var(--primary-blueish);
+}
+
+.button-action.blue a{
+    background-color: var(--primary-blueish);
+}
+
+.selection-box.blue{
+    border: 1px solid var(--primary-blueish);
+    box-shadow: 1px 1px 5px var(--primary-blueish);    
+}
+
+
+.cnt-cnt{
+    position: relative;
+    max-width: 1348px;
+    padding-inline: 24px;
+    width: 100%;
+    display: flex;
+}
+.contt{
+    position: absolute;
+    bottom: 115px;
+    max-width: 1300px;
+    width: 100%;
+}
+.cont{
+    position: absolute;
+    bottom: -20px;
+    max-width: 1300px;
+    width: 100%;
+}
