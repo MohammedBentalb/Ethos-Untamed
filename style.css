@@ -19,6 +19,9 @@
 
     --primary-blueish: #537DD8;
     --secondary-blueish: #319CFF;
+
+    --primary-purpleish: #C520D4;
+    --secondary-purpleish: #a640af;
 }
 
 @font-face {
@@ -1065,20 +1068,49 @@ mark {
 
 .card-img{
     width: 200px;
+    min-height: 295px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
+
 .arrow{
+    position: relative;
     width: 8px;
     height: 16px;
+    z-index: 10;
+}
+
+
+.ar-left::before{
+    content: url(assets/img/leftArrowBorder.png);
+    position: absolute;
+    width: 42px;
+    height: 40px;
+    z-index: -1;
+    left: -17px;
+    top: -11px;
+}
+
+.ar-right::before{
+    content: url(assets/img/leftArrowBorder.png);
+    position: absolute;
+    width: 42px;
+    height: 40px;
+    z-index: -1;
+    left: -17px;
+    top: -11px;
 }
 
 .list-items{
-    max-width: 1020px;
+    max-width: 900px;
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 46px;
-    padding-inline: 60px;
+    gap: 20px;
+    padding-inline: 90px;
 }
 .list-items-item{
     position: relative;
@@ -1097,6 +1129,11 @@ mark {
     top: -2px;
     right: 0;
     box-shadow: 1px 1px 5px var(--primary-greenish);
+}
+
+
+.list-items-item:nth-child(3){
+    margin-left: 20px;
 }
 
 
@@ -1133,7 +1170,7 @@ mark {
 .list-items-item:nth-child(2)::before{
     content: url(assets/img/h-line.png);
     position: absolute;
-    right: 128%;
+    right: 95%;
     top: 30%;
 }
 
@@ -1372,4 +1409,95 @@ mark {
 .image-deco{
     position: absolute;
     bottom: 6px;
+}
+
+
+
+.title-container.purple .cube {
+    background-color: var(--primary-purpleish);
+}
+
+.title-container.purple div p{
+    color: var(--primary-purpleish) !important;
+}
+
+
+.title-container.purple p span{
+    margin-right: 10px;
+}
+
+.title-container.purple p span::before{
+    background-color: var(--primary-purpleish);
+    opacity: .6;
+}
+.title-container.purple p span::after{
+    left: 100%;
+}
+
+.progress-in.purple{
+    background-color: var(--primary-purpleish);
+    box-shadow: -1px -1px 5px var(--primary-purpleish);
+    width: 100%;
+}
+
+.analyze.purple p {
+    color: var(--secondary-purpleish);
+}
+.analyze.purple div{
+    background-color: var(--secondary-blueish);
+}
+
+.analyze.purple p {
+    color: var(--secondary-purpleish);
+}
+.analyze.purple div{
+    background-color: var(--secondary-purpleish);
+}
+
+.lunch-btn a{
+    font-family: Orbitron;
+    background-color: transparent;
+    color: white;
+    font-size: 12px;
+    background-color: var(--secondary-purpleish);
+    text-transform: uppercase;
+    padding-inline: 22px;
+    padding-block: 7px;
+    border:1px solid hsl(0, 0%, 100%, .6) ;}
+.lunch-btn {
+   position: relative;
+}
+
+.lunch-btn a::after{
+    position: absolute;
+    content: "";
+    width: 16.5px;
+    height: 10px;
+    z-index: 2;
+    background-color: #151616;
+    transform: rotate(-40deg);
+    top: 20px;
+    right: -4.5px;
+    border-top:1px solid hsl(0, 0%, 100%, .6) ;   
+}
+
+.card-gp{
+    display: flex;
+    align-items: center;
+    max-height: 834px;
+    margin-bottom: -8px;
+}
+
+.card-gp div:first-child img{
+    width: 233px;
+}
+
+.card-gp img:nth-child(2){
+    width: 50px;
+}
+
+.cnt{
+    position: relative;
+    width: 100%;
+    height: 100px;
 }
