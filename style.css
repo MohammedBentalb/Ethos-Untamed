@@ -857,6 +857,8 @@ mark {
     left: -1px;
     height: 130%;
     background-color: var(--primary-greenish);
+    opacity: .6;
+
 }
 
 .title-container > p span::after{
@@ -1138,7 +1140,7 @@ mark {
 
 
 
-.blue .cube {
+.title-container.blue .cube {
     background-color: var(--primary-blueish);
 }
 
@@ -1152,7 +1154,8 @@ mark {
 }
 
 .title-container.blue p span::before{
-    background-color: var(--primary-blueish) !important;
+    background-color: var(--primary-blueish);
+    opacity: .6;
 }
 .title-container.blue p span::after{
     left: 90%;
@@ -1202,4 +1205,105 @@ mark {
     bottom: -20px;
     max-width: 1300px;
     width: 100%;
+}
+
+
+
+
+.title-container.yellow .cube {
+    background-color: var(--primary-yellowish);
+}
+
+.title-container.yellow div p{
+    color: var(--primary-yellowish) !important;
+}
+
+
+.title-container.yellow p span{
+    margin-right: 10px;
+}
+
+.title-container.yellow p span::before{
+    background-color: var(--primary-yellowish);
+    opacity: .6;
+}
+.title-container.yellow p span::after{
+    left: 100%;
+}
+
+.progress-in.yellow{
+    background-color: var(--primary-yellowish);
+    box-shadow: -1px -1px 5px var(--primary-yellowish);
+    width: 80%;
+}
+
+.card-info.yellow p:nth-child(2):after{
+    background-color: var(--primary-yellowish);
+}
+
+.button-action.yellow a{
+    background-color: var(--primary-yellowish);
+}
+
+.selection-box.yellow{
+    border: 1px solid var(--primary-yellowish);
+    box-shadow: 1px 1px 5px var(--primary-yellowish);    
+}
+
+.disc{
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    margin-block: 37px;
+}
+
+
+
+.rewards-container{
+    max-width: 1348px;
+    width: 100%;
+    padding-inline: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.rewards-list{
+    display: flex;
+    gap: 31px;
+}
+
+.rewards-list li{
+    width: 234px;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background: url(assets/img/nft.png);
+}
+
+.rewards-list li:nth-child(4){
+    background: url(assets/img/gold-card.png);
+}
+
+.rewards-list li:nth-child(3){
+    background: url(assets/img/discord.png);
+}
+
+.rewards-list li:nth-child(1){
+    background: url(assets/img/Necklace\ Card.png);
+}
+
+.rewards-list li p{
+    height: 20%;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center;
+    max-width: 182px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
 }
