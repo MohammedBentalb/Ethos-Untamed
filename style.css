@@ -1385,7 +1385,7 @@ mark {
     width: 10px;
     height: 13.5px;
     bottom: -6.5px;
-    right: -4.5px;
+    right: -5px;
     transform: rotate(45deg);
     border-left: 1px solid hsl(0, 0%, 100%, .6);
     border-radius: 1px;
@@ -1397,14 +1397,16 @@ mark {
     height: 15px;
 }
 
-.code-generate button{
+.code-generate a{
+    display: inline-block;
     background-color: transparent;
     border: 1px solid hsl(0, 0%, 100%, .6);
     color: white;
-    font-size: 12px;
+    font-size: 11px;
     text-transform: capitalize;
     padding-inline: 22px;
     padding-block: 10px;
+    font-family: Orbitron;
 }
 
 .image-deco{
@@ -1486,7 +1488,7 @@ mark {
     display: flex;
     align-items: center;
     max-height: 834px;
-    margin-bottom: -8px;
+    margin-bottom: -17px;
 }
 
 .card-gp div:first-child img{
@@ -1497,8 +1499,15 @@ mark {
     width: 50px;
 }
 
-.cnt{
+.vector{
     position: relative;
     width: 100%;
-    height: 100px;
+    max-width: 1350px;
 }
+.ch-vector{
+    position: absolute;
+    width: 1300px;
+    left: 25px;
+    bottom: -18px;
+}
+
