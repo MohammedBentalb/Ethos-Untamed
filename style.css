@@ -1239,7 +1239,8 @@ mark {
 }
 .cont{
     position: absolute;
-    bottom: -20px;
+    bottom: -25px;
+    right: 48px;
     max-width: 1300px;
     width: 100%;
 }
