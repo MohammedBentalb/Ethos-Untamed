@@ -1,0 +1,86 @@
+@use "variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    @each $color, $shades in $colors{
+        @each $shade , $hex in $shades{
+            --clr-#{$shade}-#{$color}: #{$hex};
+        }
+    } 
+
+}
+
+@font-face {
+    font-family: Orbitron;
+    src: url(../assets/Orbitron-VariableFont_wght.ttf) format('truetype')
+}
+@font-face{
+    font-family: Codebar;
+    src: url(../assets/LibreBarcode39ExtendedText-Regular.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Blender Pro';
+    src: url(../assets/BLENDERPRO-BOLD.TTF) format('truetype')
+}
+
+
+
+html {
+    margin: 0 !important;
+    overflow: auto !important;
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: Orbitron;
+    background-color: var(--body);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    align-items: center
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+.column {
+    display: flex;
+    flex-direction: column
+}
+
+li {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    font-family: Hacen
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Orbitron;
+    color: var(--text);
+    margin: 0
+}
+
+p {
+    font-family: Orbitron;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 1rem;
+    color: #778b9e
+}
+

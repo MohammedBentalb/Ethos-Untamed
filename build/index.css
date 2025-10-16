@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --clr-primary-green: #FFEA31;
+  --clr-seceondary-green: #F4E345;
+  --clr-primary-blue: #36B862;
+  --clr-seceondary-blue: rgba(49, 255, 94, 0.4392156863);
+  --clr-primary-yellow: #537DD8;
+  --clr-seceondary-yellow: #319CFF;
+  --clr-primary-purple: #C520D4;
+  --clr-seceondary-purple: #a640af;
+}
+
+@font-face {
+  font-family: Orbitron;
+  src: url(../assets/Orbitron-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-family: Codebar;
+  src: url(../assets/LibreBarcode39ExtendedText-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Blender Pro";
+  src: url(../assets/BLENDERPRO-BOLD.TTF) format("truetype");
+}
+html {
+  margin: 0 !important;
+  overflow: auto !important;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Orbitron;
+  background-color: var(--body);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: Hacen;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Orbitron;
+  color: var(--text);
+  margin: 0;
+}
+
+p {
+  font-family: Orbitron;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 1rem;
+  color: #778b9e;
+}
+
+.section-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0.91)), url(assets/img/ch-background.png);
+  padding-block: 3.5rem;
+  min-height: 100vh;
+}
+
+.title-container {
+  max-width: 1348px;
+  width: 100%;
+  padding-inline: 24px;
+}
+.title-container div {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.title-container div p {
+  color: var(--clr-primary-green);
+  font-size: 13px;
+  font-weight: bold;
+  font-family: "Blender pro";
+  text-transform: uppercase;
+}
+.title-container .cube {
+  width: 6px;
+  height: 6px;
+  background-color: var(--clr-primary-green);
+}
+.title-container h1 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  font-size: 40px;
+}
+.title-container > p {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 35px;
+  color: white;
+}
+.title-container .title-container > p span {
+  position: relative;
+  font-weight: bold;
+  z-index: 10;
+  padding-left: 5px;
+}
+.title-container > p span::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 115%;
+  left: -1px;
+  height: 130%;
+  background-color: var(--primary-greenish);
+  opacity: 0.6;
+}
+.title-container > p span::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 20px;
+  right: -30px;
+  top: -5px;
+  transform: rotate(45deg);
+  height: 10px;
+  background: #131514;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 3.75rem;
+}
+.loading .mesures {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.loading .mesures p:nth-child(2) {
+  font-size: 50px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: white;
+}
+.loading .mesures p:nth-child(3) {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.5);
+  margin-bottom: -10px;
+}
+.loading .mesures h2 {
+  text-transform: uppercase;
+  font-size: 29px;
+  color: white;
+  font-weight: 300;
+}
+.loading .progress {
+  margin: 0;
+}
+.loading .progress > div {
+  width: 43.01%;
+  height: 5px;
+  background-color: var(--clr-primary-green);
+  box-shadow: -1px -1px 10px var(--clr-primary-green);
+}
+.loading .progress > div div {
+  width: 786px;
+  height: 5px;
+  background-color: hsla(0, 0%, 80%, 0.18);
+}
+
+.analyze {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-block: 23px;
+}
+.analyze p {
+  color: white;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: var(--secondary-greenish);
+  opacity: 0.5;
+}
+.analyze div {
+  width: 360px;
+  height: 5px;
+  background-color: var(--secondary-greenish);
+}
+
+/*# sourceMappingURL=index.css.map */
