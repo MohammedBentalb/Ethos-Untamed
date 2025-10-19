@@ -1,24 +1,22 @@
 $colors: (
-    green: (
-        "primary" : #FFEA31,
-        "seceondary" : #F4E345,
-    ),
-    blue: (
+    "green": (
         "primary" : #36B862,
         "seceondary" : #31FF5E70,
     ),
-    yellow: (
+    "yellow": (
+        "primary" : #FFEA31,
+        "seceondary" : #F4E345,
+    ),
+    "blue": (
         "primary" : #537DD8,
         "seceondary" : #319CFF,
     ),
-    purple: (
+    "purple": (
         "primary" : #C520D4,
         "seceondary" : #a640af,
     ),
 );
 
 
-
-
-
+// variables
 $max-width: 1348px;

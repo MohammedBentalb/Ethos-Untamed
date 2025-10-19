@@ -911,8 +911,6 @@ mark {
     font-weight: 300;
 }
 
-
-
 .progress{  
     margin: 0;  
 }
@@ -1481,7 +1479,7 @@ mark {
     transform: rotate(-40deg);
     top: 20px;
     right: -4.5px;
-    border-top:1px solid hsl(0, 0%, 100%, .6) ;   
+    border-top:1px solid hsl(0, 0%, 100%, .6);   
 }
 
 .card-gp{
